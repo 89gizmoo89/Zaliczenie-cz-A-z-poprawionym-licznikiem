@@ -1,0 +1,28 @@
+p{
+    width: 250px;
+    height: 50px;
+    background: lightgray;
+    display: inline-block;
+    font-display: initial;
+    margin-bottom: 40px;
+    overflow: hidden;
+    margin-right: 10px;    
+    vertical-align: middle;
+}
+
+.inne_tlo{
+    width: 250px;
+    height: 50px;
+    background: grey;
+    display: inline-block;
+    margin-right: 10px;
+    overflow: hidden;
+    vertical-align: middle;
+    } 
+
+.wlacznik {
+    width: 100px;
+    height: 30px;
+    background: black;
+    color: white;
+}

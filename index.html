@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+<h1>Lista filmów</h1>
+
+<!--1. Na podstawie podanej listy filmów: https://jsbin.com/nosinujixa/edit?js,console stwórz listę elementów/kafelków. 
+Każdy z tych elementów powinien wyświetlać: rok premiery filmu, nazwę filmu. Co drugi element powinien mieć dodaną klasę, która doda inny styl tła.
+
+2. Nad listą filmów wyświetl liczbę filmów z listy.
+
+3. Na podstawie nazw filmów stwórz tzw. chmurę tagów, czyli listę wszystkich słów występujących w liście filmów. Jeśli tag/słowo występuje:
+raz - wielkość fontu 8px;
+więcej niż 2 razy a mniej niż 5 - wielkość fontu 12px
+więcej niż 5 - wielkość fontu 20px
+
+4. Dodaj możliwość filtrowania filmów:
+na podstawie słów kluczowych - po kliknięciu w tag z chmury tagów wyświetl tylko filmy, które w swoim tytule zwierają to słowo; 
+dodaj również tag - przycisk "wszystkie" w celu wyświetlenia wszystkich filmów na podstawie roku premiery filmu, w postaci listy <select>
+
+5. W dokumencie znajduje się "włącznik" (odpowiednio ostylowany element). 
+Kliknięcie lewym przyciskiem myszy powoduje włączenie włącznika (zmienia się wtedy jego styl), kolejne kliknięcie - jego wyłączenie. 
+Włącznik powinien zmienić również style wszystkich elementów/kafelków z listy filmów. 
+Docelowo powinniśmy mieć 2 różne stany wyglądu listy filmów - domyślny i ten uruchamiany przez włącznik.
+
+6. Stwórz formularz z dwoma polami (rok i nazwa filmu) umożliwiającymi dodanie nowego filmu i dodanie do go obecnej listy filmów. 
+Formularz powinien mieć walidacje uniemożliwiającą wysłanie pustego formularza oraz komunikat po poprawnym dodaniu filmu do listy. 
+Po dodaniu filmu sekcja wyświetlająca liczbę filmów powinna zostać zaktualizowana. -->
+<div id="liczba_filmow">Liczba wyświetlonych filmów: </div>
+<div id="film" class="film">
+</div></br>
+<div id="chmura"></div></br></br>
+<div id="wlacznik" class="wlacznik">Włącznik</div></br></br>
+<div class="form-row"> Dodawanie pozycji do listy: </br></br>
+    <input type="text" name="name" placeholder="Tytuł filmu" id="tytul">
+    <input type="text" name="text" placeholder="Rok premiery" id="rok">
+    <input type=button onclick="Dodaj()" value="Dodaj do listy">            
+    <!-- <input type=button class="submit-btn" onclick="Dodaj()" value="Dodaj do listy">             -->
+
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
